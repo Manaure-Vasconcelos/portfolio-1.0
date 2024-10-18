@@ -1,5 +1,4 @@
 import * as React from "react";
-import Autoplay from "embla-carousel-Autoplay";
 
 import {
   Carousel,
@@ -7,8 +6,9 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel";
+} from "./ui/carousel";
 import { Button } from "./ui/button";
+import Autoplay from 'embla-carousel-autoplay';
 
 export function CarouselPlugin() {
   const plugin = React.useRef(
@@ -57,7 +57,7 @@ export function CarouselPlugin() {
                   </p>
                 </div>
                 <div className='flex justify-center items-center mb-2'>
-                <Button>View Project</Button>
+                  <Button>View Project</Button>
                 </div>
               </div>
             </div>

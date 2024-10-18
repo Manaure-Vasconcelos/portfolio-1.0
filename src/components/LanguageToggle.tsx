@@ -1,17 +1,21 @@
 "use client";
 import { Languages } from "lucide-react";
-import { Select,SelectContent,
+import {
+  Select, SelectContent,
   SelectItem,
   SelectTrigger,
-  SelectValue, } from "./ui/select";
+  SelectValue,
+} from "./ui/select";
+import { useLocation, useNavigate } from "react-router-dom";
 
 // TODO fix bug
 export default function LanguageSelect() {
-  const pathname = usePathname();
-  const router = useRouter();
+  const location = useLocation();
+  const pathname = location.pathname
+  const router = useNavigate();
 
   const handleLocaleChange = (newLocale: string) => {
-    router.push(pathname, { locale: newLocale });
+    router(`${pathname}?locale=${newLocale}`);
   };
 
   return (
