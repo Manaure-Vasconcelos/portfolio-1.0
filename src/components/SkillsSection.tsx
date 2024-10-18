@@ -1,5 +1,4 @@
 import { useTranslation } from "react-i18next";
-import LogoTools from "./LogoTools";
 
 
 // TODO refactor skill section
@@ -11,7 +10,6 @@ function SkillsSection({
   const {t} = useTranslation();
   return (
     <section ref={skillsSectionRef} className="h-screen scroll-mt-16 relative">
-      <div className="background3" />
       <h1 className="flex justify-center items-center text-4xl font-extrabold font-serif tracking-wide pt-4 truncate w-full">
         {t("SkillsSection.title")}
       </h1>

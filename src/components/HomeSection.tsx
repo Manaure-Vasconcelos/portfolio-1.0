@@ -5,13 +5,12 @@ function HomeSection({
 }: {
   homeSectionRef: React.RefObject<HTMLElement>;
 }) {
-  const {t} = useTranslation()
+  const { t } = useTranslation()
   return (
     <section
       ref={homeSectionRef}
       className="flex flex-col justify-center items-center h-screen scroll-mt-16 relative"
     >
-      <div className='background' />
       <div className="w-full justify-start">
         <p className="text-[1.5rem] font-semibold font-sans text-customPink inline-block ">
           {t("HomeSection.p1")}

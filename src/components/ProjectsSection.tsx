@@ -12,7 +12,6 @@ function ProjectsSection({
       ref={projectsSectionRef}
       className="h-screen scroll-mt-16 flex flex-col justify-between items-center relative"
     >
-      <div className='background2' />
       <div className="h-1/3 w-full md:w-full pt-3">
         <h1 className="flex justify-center items-center text-4xl font-extrabold font-serif tracking-wide">
           {t("ProjectsSection.title")}

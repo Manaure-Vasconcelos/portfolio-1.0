@@ -11,7 +11,6 @@ function ContactMeSection({
   const { t } = useTranslation();
   return (
     <section ref={contactMeRef} className="h-screen scroll-mt-16 relative">
-      <div className="background4" />
       <h1 className="flex justify-center items-center text-4xl font-extrabold font-serif tracking-wide pt-4">
         {t("ContactmeSection.title")}
       </h1>
