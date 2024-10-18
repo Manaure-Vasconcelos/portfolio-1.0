@@ -2,14 +2,65 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+	:root {
+		--radius: 0.5rem;
+}
+
 html,
 body {
 	margin: 0;
 	padding: 0;
 }
 
-@layer base {
-  :root {
-		--radius: 0.5rem;
-	}
+.background {
+	position: absolute;
+	top: 0;
+	left: -14rem; /* compensa a margem da página */
+	right: -14rem; /* compensa a margem da página */
+	width: calc(100% + 20rem); /* 14rem de cada lado */
+	height: 100vh;
+	background-image: url('/background1.png');
+	background-size: cover;
+	background-position: center;
+	z-index: -1;
+}
+
+.background2 {
+	position: absolute;
+	top: 0;
+	left: -14rem; /* compensa a margem da página */
+	right: -14rem; /* compensa a margem da página */
+	width: calc(100% + 20rem); /* 14rem de cada lado */
+	height: 100vh;
+	background-image: url('/background2.png');
+	background-size: cover;
+	background-position: center;
+	z-index: -1;
+}
+
+.background3 {
+	position: absolute;
+	top: 0;
+	left: -14rem; /* compensa a margem da página */
+	right: -14rem; /* compensa a margem da página */
+	width: calc(100% + 20rem); /* 14rem de cada lado */
+	height: 100vh;
+	background-image: url('/background3.png');
+	background-size: cover;
+	background-position: center;
+	z-index: -1;
+}
+
+.background4 {
+	position: absolute;
+	top: 0;
+	left: -14rem; /* compensa a margem da página */
+	right: -14rem; /* compensa a margem da página */
+	width: calc(100% + 20rem); /* 14rem de cada lado */
+	height: 100vh;
+	background-image: url('/background4.png');
+	background-size: cover;
+	background-position: center;
+	z-index: -1;
 }
