@@ -1,5 +1,4 @@
 "use client";
-import { Languages } from "lucide-react";
 import {
   Select, SelectContent,
   SelectItem,
@@ -15,7 +14,6 @@ export default function LanguageSelect() {
   return (
     <Select onValueChange={handleLocaleChange}>
       <SelectTrigger className="w-16">
-        <Languages />
       </SelectTrigger>
       <SelectContent className="w-16">
         <SelectItem value="es" className="hover:cursor-pointer">ES</SelectItem>
