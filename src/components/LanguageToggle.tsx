@@ -4,18 +4,12 @@ import {
   Select, SelectContent,
   SelectItem,
   SelectTrigger,
-  SelectValue,
 } from "./ui/select";
-import { useLocation, useNavigate } from "react-router-dom";
+import i18next from '../i18n'
 
-// TODO fix bug
 export default function LanguageSelect() {
-  const location = useLocation();
-  const pathname = location.pathname
-  const router = useNavigate();
-
-  const handleLocaleChange = (newLocale: string) => {
-    router(`${pathname}?locale=${newLocale}`);
+  const handleLocaleChange = (lng: string) => {
+    i18next.changeLanguage(lng);
   };
 
   return (

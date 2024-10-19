@@ -11,8 +11,8 @@ const resources = {
 }
 
 i18next
-  .use(initReactI18next)
   .use(LanguageDetector)
+  .use(initReactI18next)
   .init({
     resources,
     debug: true,
