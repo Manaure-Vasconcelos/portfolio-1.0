@@ -1,5 +1,5 @@
 import { Button } from "./ui/button";
-import Logo from "./Logo";
+import Logo from "/logo.png";
 import SheetSideBar from "./SheetSideBar";
 import { useTranslation } from "react-i18next";
 import LanguageToggle from "./LanguageToggle";
@@ -17,7 +17,7 @@ interface NavbarProps {
 function NavBar({ onScrollToSection, sectionRefs }: NavbarProps) {
   const { t } = useTranslation();
   return (
-    <header className="sticky top-0 z-10 flex flex-row h-16 justify-between md:justify-evenly items-center gap-4 border-b bg-background px-4 md:px-6">
+    <header className="sticky top-0 z-10 flex flex-row h-16 justify-between md:justify-evenly items-center gap-4 bg-background/70 backdrop-blur-xl px-4 md:px-6">
       <SheetSideBar
         onScrollToSection={onScrollToSection}
         sectionRefs={sectionRefs}
@@ -28,7 +28,7 @@ function NavBar({ onScrollToSection, sectionRefs }: NavbarProps) {
         className="flex flex-row justify-center items-center gap-2 text-lg font-semibold md:text-base"
         onClick={() => onScrollToSection(sectionRefs.section1)}
       >
-        <Logo />
+        <img src={Logo} className='w-14 h-14'/>
         <span className="sr-only">manaure.dev</span>
       </Button>
 
