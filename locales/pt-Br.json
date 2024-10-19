@@ -12,17 +12,16 @@
 	},
 	"ProjectsSection": {
 		"title": "Projetos",
-		"description1": "Oferecendo soluções completas para o seu negócio, desde o desenvolvimento de software de gestão, criação de sites, landing pages, aplicativos entres outras soluções digitais. ",
-		"description2": "Cada projeto alinhado às suas necessidades. Confira abaixo alguns dos nossos trabalhos!"
+		"description1": "Confira abaixo os projetos em destaque."
 	},
 	"SkillsSection": {
-		"title": "HABILIDADES E FERRAMENTAS",
+		"title": "Habilidades e Ferramentas",
 		"description1": "Tecnologias que possuo interesse:",
 		"altLogo": "Sites Responsivos",
 		"descriptionReact": "Desenvolvimento de interfaces modernas utilizando tecnologias amplamente adotadas no mercado, incluindo: <ul><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>TypeScript</li></ul>"
 	},
 	"ContactmeSection": {
-		"title": "CONTATE-ME",
+		"title": "Contate-me",
 		"title2": "Informações de contato",
 		"subtitle": "Alguma pergunta ou comentário? basta nos escrever uma mensagem",
 		"description1": "Preencha o formulário e nossa equipe entrará em contato com você em até 24 horas"

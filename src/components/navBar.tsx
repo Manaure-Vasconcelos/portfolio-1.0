@@ -17,7 +17,7 @@ interface NavbarProps {
 function NavBar({ onScrollToSection, sectionRefs }: NavbarProps) {
   const { t } = useTranslation();
   return (
-    <header className="sticky top-0 z-10 flex flex-row h-16 justify-between md:justify-evenly items-center gap-4 bg-background/70 backdrop-blur-xl px-4 md:px-6">
+    <header className="sticky top-0 z-10 flex flex-row h-16 justify-between md:justify-evenly items-center gap-4 bg-background/70 backdrop-blur-xl px-4 md:px-6 shadow-md">
       <SheetSideBar
         onScrollToSection={onScrollToSection}
         sectionRefs={sectionRefs}

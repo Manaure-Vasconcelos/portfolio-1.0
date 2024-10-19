@@ -10,7 +10,7 @@ function SkillsSection({
   const {t} = useTranslation();
   return (
     <section ref={skillsSectionRef} className="h-screen scroll-mt-16 relative">
-      <h1 className="flex justify-center items-center text-4xl font-extrabold font-serif tracking-wide pt-4 truncate w-full">
+      <h1 className="flex justify-center items-center text-4xl text-customPink font-regular font-serif tracking-wide pt-4 truncate w-full">
         {t("SkillsSection.title")}
       </h1>
       <article className="w-full h-5/6 flex flex-col justify-center items-center">
