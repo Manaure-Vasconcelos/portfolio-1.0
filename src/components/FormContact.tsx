@@ -58,7 +58,7 @@ export function FormContact() {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <Button variant="outline">Enviar Email.</Button>
+        <Button>Enviar Email.</Button>
       </SheetTrigger>
       <SheetContent side={'right'}>
         <SheetHeader>
