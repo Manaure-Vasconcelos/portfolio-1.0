@@ -11,6 +11,8 @@ import {
   SheetTitle,
   SheetTrigger
 } from "./ui/sheet";
+import { Mail, Send } from 'lucide-react'
+
 
 interface FormProps {
   name: string;
@@ -49,6 +51,7 @@ export function FormContact() {
       });
 
       reset();
+      // TODO fechar  sheet
     } catch (error: any) {
       alert(`Server Error`);
       console.log(error.message);
@@ -58,7 +61,12 @@ export function FormContact() {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <Button>Enviar Email.</Button>
+        <Button className='w-full h-16 p-5 text-xl flex justify-between items-center'>
+          <div className='w-1/2 flex justify-start items-center gap-2'>
+            <Mail size={6} /> Enviar Email.
+          </div>
+          <Send />
+        </Button>
       </SheetTrigger>
       <SheetContent side={'right'}>
         <SheetHeader>
