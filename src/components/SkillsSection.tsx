@@ -1,6 +1,12 @@
 import { useTranslation } from "react-i18next";
 import { MonitorSmartphone, Settings, Server } from 'lucide-react';
 import CardSkills from './CardSkills';
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "./ui/accordion"
 
 // TODO refactor skill section
 function SkillsSection({
@@ -15,20 +21,45 @@ function SkillsSection({
         {t("SkillsSection.title")}
       </h1>
       <article className="w-full h-5/6 flex justify-center items-center">
-        <div className="w-4/5 flex justify-center items-center space-x-8">
-          <CardSkills title='WebSites e Aplicativos' description="Desenvolvimento de interfaces">
-            <MonitorSmartphone size={30} />
-          </CardSkills>
-          <CardSkills title='API e Banco de dados' description="Criação de serviços de sistemas">
-            <Server size={30} />
-          </CardSkills>
-          <CardSkills title='Suporte' description="Correção de problemas e melhorias">
-            <Settings size={30} />
-          </CardSkills>
-        </div>
+        <Accordion type="single" collapsible orientation="horizontal" className='w-4/5 h-full flex justify-center items-center space-x-8'>
+          <AccordionItem value="item-1">
+            <AccordionTrigger>
+              <CardSkills title='WebSites e Aplicativos' description="Desenvolvimento de interfaces">
+                <MonitorSmartphone size={30} />
+              </CardSkills>
+            </AccordionTrigger>
+            <AccordionContent>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe ut asperiores libero pariatur laudantium ipsam necessitatibus soluta
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value="item-2">
+            <AccordionTrigger>
+              <CardSkills title='API e Banco de dados' description="Criação de serviços de sistemas">
+                <Server size={30} />
+              </CardSkills>
+            </AccordionTrigger>
+            <AccordionContent>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe ut asperiores libero pariatur laudantium ipsam necessitatibus soluta
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value="item-3">
+            <AccordionTrigger>
+              <CardSkills title='Suporte' description="Correção de problemas e melhorias">
+                <Settings size={30} />
+              </CardSkills>
+            </AccordionTrigger>
+            <AccordionContent>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe ut asperiores libero pariatur laudantium ipsam necessitatibus soluta
+            </AccordionContent>
+          </AccordionItem>
+        </Accordion>
       </article>
     </section>
   );
 }
 
 export default SkillsSection;
+{/* <div className="relative group">
+
+            <div className="absolute top-[-0%] left-0 w-[270px] h-full bg-white p-4 border rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer">algo</div>
+        </div> */}
