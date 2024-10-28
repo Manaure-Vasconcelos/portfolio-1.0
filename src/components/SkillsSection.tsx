@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { MonitorSmartphone, Settings, Server } from 'lucide-react';
+import { MonitorSmartphone, Server } from 'lucide-react';
 import CardSkills from './CardSkills';
 import {
   Accordion,
@@ -16,7 +16,7 @@ function SkillsSection({
 }) {
   const { t } = useTranslation();
   return (
-    <section ref={skillsSectionRef} className="h-screen scroll-mt-16 relative">
+    <section ref={skillsSectionRef} className="h-screen scroll-mt-16">
       <h1 className="flex justify-center items-center text-4xl text-customPink font-regular font-serif tracking-wide pt-4 truncate w-full">
         {t("SkillsSection.title")}
       </h1>
@@ -29,7 +29,7 @@ function SkillsSection({
               </CardSkills>
             </AccordionTrigger>
             <AccordionContent>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe ut asperiores libero pariatur laudantium ipsam necessitatibus soluta
+              Desenvolvimento de websites, landing pages e aplicativos com <u>React</u>, <u>TypeScript</u> e <u>JavaScript</u> para criar interfaces modernas e responsivas
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-2">
@@ -39,10 +39,10 @@ function SkillsSection({
               </CardSkills>
             </AccordionTrigger>
             <AccordionContent>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe ut asperiores libero pariatur laudantium ipsam necessitatibus soluta
+              Desenvolvimento de APIs e sistemas com <u>Node.js</u>, <u>NestJS</u> e <u>Fastify</u>, utilizando <u>TypeScript</u> e <u>SQL</u> para criar serviços robustos e escaláveis
             </AccordionContent>
           </AccordionItem>
-          <AccordionItem value="item-3">
+          {/* <AccordionItem value="item-3">
             <AccordionTrigger>
               <CardSkills title='Suporte' description="Correção de problemas e melhorias">
                 <Settings size={30} />
@@ -51,7 +51,7 @@ function SkillsSection({
             <AccordionContent>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe ut asperiores libero pariatur laudantium ipsam necessitatibus soluta
             </AccordionContent>
-          </AccordionItem>
+          </AccordionItem> */}
         </Accordion>
       </article>
     </section>
