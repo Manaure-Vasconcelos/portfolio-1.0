@@ -11,11 +11,14 @@ function ContactMeSection({
   const { t } = useTranslation();
   return (
     <section ref={contactMeRef} className="h-auto scroll-mt-16 relative">
-      <h1 className="flex justify-center items-center text-4xl text-customPink font-regular font-serif tracking-wide pt-4">
+      <h1 className="text-center text-4xl text-customPink font-regular font-serif tracking-wide pt-4">
         {t("ContactmeSection.title")}
       </h1>
       <p className="leading-snug [&:not(:first-child)]:mt-6 text-[26px] font-semibold font-sans tracking-wider text-center">
         {t("ContactmeSection.subtitle")}
+      </p>
+      <p className="text-xl mt-2 text-muted-foreground text-center">
+        {t("ContactmeSection.subtitle2")}
       </p>
       <article className="h-[400px] w-full flex flex-col justify-start items-center mt-48">
         <div className='w-1/4 flex flex-col justify-center items-center gap-1'>

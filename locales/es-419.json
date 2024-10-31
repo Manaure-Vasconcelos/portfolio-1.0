@@ -15,15 +15,13 @@
 		"description1": "Consulte los proyectos destacados a continuación."
 	},
 	"SkillsSection": {
-		"title": "Habilidades y Herramientas",
-		"description1": "Tecnologías que me interesan:",
-		"altLogo": "Sítios Web Responsivos",
-		"descriptionReact": "Desarrollo de interfaces modernas utilizando tecnologías ampliamente adoptadas en el mercado, incluyendo: <ul><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>TypeScript</li></ul>"
+		"title": "Mis Servicios",
+		"description1": "Cómo puedo ayudar a tu proyecto"
 	},
 	"ContactmeSection": {
 		"title": "Contactame",
 		"title2": "Información del contacto",
-		"subtitle": "¿Alguna pregunta o comentario? solo escríbenos un mensaje",
-		"description1": "Complete el formulario y nuestro equipo se comunicará con usted dentro de las 24 horas."
+		"subtitle": "¿Te gustó mi trabajo?",
+		"subtitle2": "Ponte en contacto o sigue mis redes sociales!"
 	}
 }

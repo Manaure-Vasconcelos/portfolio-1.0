@@ -20,6 +20,9 @@ function SkillsSection({
       <h1 className="flex justify-center items-center text-4xl text-customPink font-regular font-serif tracking-wide pt-4 truncate w-full">
         {t("SkillsSection.title")}
       </h1>
+      <p className="leading-snug [&:not(:first-child)]:mt-6 text-[26px] font-semibold font-sans tracking-wider text-center">
+        {t("SkillsSection.description1")}
+      </p>
       <article className="w-full h-5/6 flex justify-center items-center">
         <Accordion type="single" collapsible orientation="horizontal" className='w-full md:w-4/5 h-full flex flex-col md:flex-row justify-center items-center md:space-x-8'>
           <AccordionItem value="item-1">
