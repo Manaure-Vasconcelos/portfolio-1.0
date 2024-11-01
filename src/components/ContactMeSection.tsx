@@ -10,7 +10,7 @@ function ContactMeSection({
 }) {
   const { t } = useTranslation();
   return (
-    <section ref={contactMeRef} className="h-auto scroll-mt-16 relative">
+    <section ref={contactMeRef} className="h-auto scroll-mt-16">
       <h1 className="text-center text-4xl text-customPink font-regular font-serif tracking-wide pt-4">
         {t("ContactmeSection.title")}
       </h1>
@@ -21,7 +21,7 @@ function ContactMeSection({
         {t("ContactmeSection.subtitle2")}
       </p>
       <article className="h-[400px] w-full flex flex-col justify-start items-center mt-48">
-        <div className='w-1/4 flex flex-col justify-center items-center gap-1'>
+        <div className='w-full md:w-1/4 flex flex-col justify-center items-center gap-1'>
           <FormContact />
           <ContactSocialMedia url='https://www.linkedin.com/in/manaure-vasconcelos-63b38218a/'>
             <Linkedin size={6} />
