@@ -37,7 +37,7 @@ export function CarouselPlugin() {
             key={index}
             className="w-full h-[600px] md:h-[550px] flex items-center justify-center"
           >
-            <div className="flex flex-col justify-center border items-center w-full h-full">
+            <div className="flex flex-col justify-center items-center w-full h-full">
               {/* Imagem do lado esquerdo */}
               <div className="w-11/12 h-2/3 flex items-center justify-center">
                 <img

@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
-import { CarouselPlugin } from "./carouselProjects";
 
+// TODO Refactor section
 function ProjectsSection({
   projectsSectionRef,
 }: {
@@ -10,9 +10,9 @@ function ProjectsSection({
   return (
     <section
       ref={projectsSectionRef}
-      className="h-screen scroll-mt-16 flex flex-col gap-6 items-center relative"
+      className="h-screen scroll-mt-16 flex flex-col justify-around items-center"
     >
-      <div className="w-full md:w-full pt-3">
+      <div className="w-full">
         <h1 className="flex justify-center items-center text-4xl font-regular font-serif text-customPink tracking-wide">
           {t("ProjectsSection.title")}
         </h1>
@@ -21,7 +21,7 @@ function ProjectsSection({
         </p>
       </div>
       <div className="flex justify-center items-center w-full h-1/2 md:h-3/4">
-        <CarouselPlugin />
+        {/* <CarouselPlugin /> */}
       </div>
     </section>
   );

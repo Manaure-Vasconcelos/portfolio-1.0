@@ -8,7 +8,6 @@ import {
   AccordionTrigger,
 } from "./ui/accordion"
 
-// TODO refactor skill section
 function SkillsSection({
   skillsSectionRef,
 }: {
